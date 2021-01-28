@@ -286,7 +286,7 @@ void Pick_items()
 				gcommon.Ring = "Life Ring";
 				break;
 			case 2:
-				gcommon.aptotal = gcommon.ap + 15;
+				gcommon.aptotal = gcommon.aptotal + 15;
 				gcommon.Ring = "Knight's Ring";
 				break;
 			case 3:
