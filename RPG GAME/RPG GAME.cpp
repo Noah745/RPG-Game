@@ -1186,31 +1186,42 @@ bool gameplay()
 	init_rooms();
 	system("cls");
 	Beginning_dialogue();
-	finish = randnum(9);
+	decidefinish = randnum(9);
 	switch (decidefinish)
 	{
 	case 0:
 		finish = 1;
+		break;
 	case 1:
 		finish = 2;
+		break;
 	case 2:
 		finish = 4;
+		break;	
 	case 3:
 		finish = 16;
+		break;	
 	case 4:
 		finish = 20;
+		break;	
 	case 5:
 		finish = 28;
+		break;	
 	case 6:
 		finish = 32;
+		break;	
 	case 7:
 		finish = 44;
+		break;	
 	case 8:
 		finish = 45;
+		break;	
 	case 9:
 		finish = 46;
+		break;	
 	case 10:
 		finish = 47;
+		break;	
 	}
 
 	do
@@ -1364,7 +1375,9 @@ bool gameplay()
 	
 	system("cls");
 
-	Monster(15, 1000, "FINALBOSS", 2);
+	current_room_num = finish;
+	
+	Monster(current_room.eap, current_room.ehp, "FINALBOSS", 2);
 	
 	printf("YOU WON!!!!!");
 
