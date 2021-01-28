@@ -265,17 +265,17 @@ void Pick_items()
 		{
 			case 1:
 				gcommon.aptotal = gcommon.ap + 10;
-				gcommon.dur = 30;
+				gcommon.durtotal = 30;
 				gcommon.Weapon = "Shortsword";
 				break;
 			case 2:
 				gcommon.aptotal = gcommon.ap + 20;
-				gcommon.dur = 20;
+				gcommon.durtotal = 20;
 				gcommon.Weapon = "Longsword";
 				break;
 			case 3:
 				gcommon.aptotal = gcommon.ap + 30;
-				gcommon.dur = 10;
+				gcommon.durtotal = 10;
 				gcommon.Weapon = "Greatsword";
 				break;
 		}
@@ -290,7 +290,7 @@ void Pick_items()
 				gcommon.Ring = "Knight's Ring";
 				break;
 			case 3:
-				gcommon.durtotal = gcommon.dur + 20;
+				gcommon.durtotal = gcommon.durtotal + 20;
 				gcommon.Ring = "Wood Grain Ring";
 				break;
 		}
