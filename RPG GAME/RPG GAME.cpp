@@ -1364,6 +1364,8 @@ bool gameplay()
 	
 	system("cls");
 
+	Monster(15, 1000, "FINALBOSS", 2);
+	
 	printf("YOU WON!!!!!");
 
 	return 0;
