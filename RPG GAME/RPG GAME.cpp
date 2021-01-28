@@ -728,10 +728,10 @@ void init_rooms()
 	rooms[33].monsterascii = 1;
 	rooms[33].eap = 5;
 	rooms[33].ehp = 200;
-	rooms[33].up = 0;
-	rooms[33].down = 0;
-	rooms[33].left = 24;
-	rooms[33].right = 26;
+	rooms[33].up = 30;
+	rooms[33].down = 40;
+	rooms[33].left = 0;
+	rooms[33].right = 34;
 		  
 	rooms[34].xRow = 20;
 	rooms[34].xCol = 38;
