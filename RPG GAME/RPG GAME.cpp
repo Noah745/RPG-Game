@@ -1180,7 +1180,7 @@ bool gameplay()
 	int direction;
 	int current_room_num = 24;
 	int decidefinish{}, finish;
-	int itemchance, yesnoitem, Aitem = 0;
+	int itemchance, yesnoitem, Aitem;
 	string str_room_selection;
 	ARoom current_room;
 	init_rooms();
@@ -1229,6 +1229,7 @@ bool gameplay()
 			perm_stats();
 			print_maze(gcommon.myrow, gcommon.mycol);
 			itemchance = randnum(3);
+			Aitem = randnum(2);
 			if (itemchance == 0)
 			{
 				setcursor(25, 1);
@@ -1242,7 +1243,6 @@ bool gameplay()
 				system("cls");
 				if (yesnoitem == 1) 
 				{
-					Aitem = randnum(2);
 					if (Aitem == 0)
 					{
 						gcommon.aptotal = gcommon.ap + 10;
